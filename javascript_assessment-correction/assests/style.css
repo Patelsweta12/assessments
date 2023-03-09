@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color:  rgba(235, 240, 250, 0.63);
+}
+
+.error {
+    color: red;
+    display: block;
+}
+.error-color{
+    color: red;
+}
+.success-color{
+    color: green;
+}
+.open-color{
+    color: blue;
+}
+
+.table-width {
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.edit-color {
+    background-color: darkcyan;
+    color: white;
+margin-left: 20px;
+    width: 72px;
+    height: 32px;
+    border: none;
+    border-radius: 6px;
+}
+
+.delete-color-space {
+    background-color: rgb(240, 60, 15);
+    margin-right: 20px;
+    color: white;
+    width: 72px;
+    height: 32px;
+    border: none;
+    border-radius: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+
+}
+
+.table-width {
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+/* helper class */
+.cursor-pointer {
+    cursor: pointer;
+}
+.btn-size {
+    width: 60pxpx;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.saveBtncolor {
+    background-color: #2264E5;
+    width: 60px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    
+}
+
+.updateBtnColor {
+    background-color: #80a3e9;
+    width: 109px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.cancelBtnColor {
+    background-color: #666666;
+    width: 70px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.inputClass {
+   
+    outline: 0;
+    border: 1px solid rgb(230, 223, 196);
+    width: 313px;
+    height: 32px;
+    padding: 9px;
+}
+
+.statusAndAddBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addBtn-color {
+    background-color: #2264E5;
+    width: 146px;
+    height: 32px;
+    box-shadow: 0px 2px 5px rgba(34, 100, 230, 0.12);
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+
+
+
+.statusBtnProp {
+    width: 109px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
+    border-radius: 6px;
+}
+.display{
+    display: block;
+    margin-bottom: 9px;
+}
+
+.statusAndAddBtn {
+    margin-bottom: 15px;
+
+}
+
+.d-flex {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+.compulsory{
+    color: red;
+}
+
+.formFields {
+    flex-direction: column;
+
+}
+
+.upper-part {
+    background-color: white;
+    padding: 15px;
+}
+
+.upper-fields {
+    margin-bottom: 30px;
+}
+
+input {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(104, 113, 130, 0.16);
+    border-radius: 3px;
+    outline: 0;
+}
+
+.bothBtn {
+    display: flex;
+    justify-content: end;
+    padding: 24px;
+}

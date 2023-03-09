@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <link rel="stylesheet" href="assests/style.css">
+</head>
+
+<body>
+    <section class="formSection">
+        <div class="upper-part">
+
+            <div class="statusAndAddBtn">
+
+                <button class="f-btn cursor-pointer statusBtnProp">
+                    <img src="assests/img/status-icon.svg" alt="status">
+                    <span>Status</span>
+                </button>
+                <button class="addBtn-color cursor-pointer "
+                    >Add Customer</button>
+
+            </div>
+
+            <div id="id01" class="modal">
+                <form class="form-container">
+
+                    <div class="d-flex formFields">
+                        <div class="d-flex upper-fields">
+                            <div>
+                                <label for="name" class="display">Name: <span class="compulsory">*</span></label>
+                                <input type="text" id="name" name="name" class="inputClass"
+                                    placeholder="Enter Name" /><br />
+                                <p class="error" id="nameerror"></p><br />
+                            </div>
+                            <div>
+                                <label for="description" class="display">Description: <span
+                                        class="compulsory">*</span></label>
+                                <input type="text" id="description" name="description" class="inputClass"
+                                    placeholder="Enter Description" /><br />
+                                <p class="error" id="descriptionError"></p><br />
+                            </div>
+                            <div>
+                                <label for="status" class="display"> Status: <span class="compulsory">*</span></label>
+                                <select name="select" id="selectStatus" class="inputClass">
+                                    <option value="status">Status</option>
+                                    <option value="open">Open</option>
+                                    <option value="error">Error</option>
+                                    <option value="success">Success</option>
+                                    <option value="inactive">Inactive</option>
+                                </select>
+                                <p class="error" id="statusError"></p><br />
+                            </div>
+                        </div>
+
+                        <div class="d-flex ">
+                            <div>
+                                <label for="rate" class="display"> Rate: <span class="compulsory">*</span></label>
+                                <input type="number" id="rate" name="rate" class="inputClass"
+                                    placeholder="Enter Rate" /><br />
+                                <p class="error" id="rateEerror"></p><br />
+                            </div>
+                            <div>
+                                <label for="balance" class="display"> Balance: <span class="compulsory">*</span></label>
+                                <input type="number" id="balance" name="balance" class="inputClass"
+                                    placeholder="Enter Balance" /><br />
+                                <p class="error" id="balanceError"></p><br />
+                            </div>
+                            <div>
+                                <label for="deposite" class="display"> Deposite: <span
+                                        class="compulsory">*</span></label>
+                                <input type="number" id="deposite" name="deposite" class="inputClass"
+                                    placeholder="Enter Deposit" /><br />
+                                <p class="error" id="depositeError"></p><br />
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+        <div class="bothBtn">
+
+            <button type="submit" value="Submit" id="submit" class="btn-size saveBtncolor cursor-pointer ">Save</button>
+            <button type="update" id="update" value="update" class="btn-size updateBtnColor cursor-pointer">Update
+                Student</button>
+            <button type="cancel" value="cancel" id="cancel" class="btn-size cancelBtnColor cursor-pointer">
+                Cancel</button>
+        </div>
+       
+
+    </section>
+    <script src="table.js"></script>
+
+</body>
+
+</html>
