@@ -124,7 +124,7 @@ saveButton.addEventListener("click", (e) => {
       .then((data) => data)
       .catch((error) => error);
 });
-
+// TABLE START
 let table = document.createElement("table");
 console.log(table);
 table.classList.add("table-width"); // for style
@@ -164,87 +164,105 @@ window.addEventListener(
   fetch("http://localhost:3000/table")
     .then((response) => response.json())
     .then((data) => {
-      let tBody = table.createTBody("tbody");
-      table.appendChild(tBody);
-      for (const element of data) {
-        let row = document.createElement("tr");
-        tBody.appendChild(row);
-        for (const iterator of headers) {
-          let td = document.createElement("td");
-          row.appendChild(td);
-          if (iterator["key"] == "selectStatus") {
-            console.log(element[iterator["key"]]);
-            if (element[iterator["key"]] == "error") {
-              td.className = "error-color";
-            }
-            if (element[iterator["key"]] == "success") {
-              td.className = "success-color";
-            }
-            if (element[iterator["key"]] == "open") {
-              td.className = "open-color";
-            }
-          }
-          let text = document.createTextNode(element[iterator["key"]]);
-          td.appendChild(text);
-        }
-
-        let td = document.createElement("td");
-        let deletBtn = document.createElement("button");
-        let deleteBtnText = document.createTextNode("Delete");
-        deletBtn.appendChild(deleteBtnText);
-        td.appendChild(deletBtn);
-        deletBtn.addEventListener("click", () => {
-          fetch(`http://localhost:3000/table/${element.id}`, {
-            method: "DELETE",
-          });
-        });
-        deletBtn.classList.add(
-          "delete-color-space",
-          "border-radius",
-          "cursor-pointer"
-        ); //TO DELET THE DATA
-
-        let editBtn = document.createElement("button");
-        let editBtnText = document.createTextNode("Edit");
-        editBtn.appendChild(editBtnText);
-        td.appendChild(editBtn);
-        row.appendChild(td);
-
-        editBtn.addEventListener("click", () => {
-          document.getElementById("name").value = element.name;
-          document.getElementById("description").value = element.description;
-          document.getElementById("selectStatus").value = element.selectStatus;
-          document.getElementById("rate").value = element.rate;
-          document.getElementById("balance").value = element.balance;
-          document.getElementById("deposite").value = element.deposite;
-          //TO UPDATE THE DATA
-          let updateBTn = document.getElementById("update");
-          updateBTn.addEventListener("click", () => {
-            fetch(`http://localhost:3000/table/${element.id}`, {
-              method: "PUT",
-              headers: { "content-type": "application/json" },
-              body: JSON.stringify({
-                name: document.getElementById("name").value,
-                description: document.getElementById("description").value,
-                selectStatus: document.getElementById("selectStatus").value,
-                rate: document.getElementById("rate").value,
-                balance: document.getElementById("balance").value,
-                deposite: document.getElementById("deposite").value,
-              }),
-            })
-              .then((response) => response.json())
-              .then((data) => data);
-          });
-        });
-        editBtn.classList.add(
-          "edit-color",
-          "edit-color-onclick",
-          "border-radius",
-          "cursor-pointer"
-        );
-      }
+      createTable(data)
     })
 );
+let tBody = table.createTBody("tbody");
+      table.appendChild(tBody);
+
+
+function createTable(data) {
+  for (const element of data) {
+    let row = document.createElement("tr");
+    tBody.appendChild(row);
+    for (const iterator of headers) {
+      let td = document.createElement("td");
+      row.appendChild(td);
+      if (iterator["key"] == "selectStatus") {
+        console.log(element[iterator["key"]]);
+        if (element[iterator["key"]] == "error") {
+          td.className = "error-color";
+        }
+        if (element[iterator["key"]] == "success") {
+          td.className = "success-color";
+        }
+        if (element[iterator["key"]] == "open") {
+          td.className = "open-color";
+        }
+      }
+      let text = document.createTextNode(element[iterator["key"]]);
+      td.appendChild(text);
+    }
+  
+    let td = document.createElement("td");
+    let deletBtn = document.createElement("button");
+    let deleteBtnText = document.createTextNode("Delete");
+    deletBtn.appendChild(deleteBtnText);
+    td.appendChild(deletBtn);
+    deletBtn.addEventListener("click", () => {
+      fetch(`http://localhost:3000/table/${element.id}`, {
+        method: "DELETE",
+      });
+    });
+    deletBtn.classList.add(
+      "delete-color-space",
+      "border-radius",
+      "cursor-pointer"
+    ); //TO DELET THE DATA
+  
+    let editBtn = document.createElement("button");
+    let editBtnText = document.createTextNode("Edit");
+    editBtn.appendChild(editBtnText);
+    td.appendChild(editBtn);
+    row.appendChild(td);
+  
+    editBtn.addEventListener("click", () => {
+      document.getElementById("name").value = element.name;
+      document.getElementById("description").value = element.description;
+      document.getElementById("selectStatus").value = element.selectStatus;
+      document.getElementById("rate").value = element.rate;
+      document.getElementById("balance").value = element.balance;
+      document.getElementById("deposite").value = element.deposite;
+      //TO UPDATE THE DATA
+      let updateBTn = document.getElementById("update");
+      updateBTn.addEventListener("click", () => {
+        fetch(`http://localhost:3000/table/${element.id}`, {
+          method: "PUT",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            name: document.getElementById("name").value,
+            description: document.getElementById("description").value,
+            selectStatus: document.getElementById("selectStatus").value,
+            rate: document.getElementById("rate").value,
+            balance: document.getElementById("balance").value,
+            deposite: document.getElementById("deposite").value,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => data);
+      });
+    });
+    editBtn.classList.add(
+      "edit-color",
+      "edit-color-onclick",
+      "border-radius",
+      "cursor-pointer"
+    );
+  }
+
+}
+
+function filter() {
+  let status=document.getElementById("Status")
+   fetch("http://localhost:3000/table").then((response) => response.json())
+   .then(data =>{
+    let newFilter= data.filter(item=>item.selectStatus==status.value||status.value=="status")
+    tBody.innerHTML=""
+    createTable(newFilter)
+  })
+   
+  
+}
 
 let body = document.querySelector("body");
 body.appendChild(table);

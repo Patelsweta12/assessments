@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Data</title>
+    <title>Form Data correction</title>
     <link rel="stylesheet" href="assests/style.css">
 </head>
 
@@ -14,11 +14,20 @@
         <div class="upper-part">
 
             <div class="statusAndAddBtn">
+                <!-- <label for="status" class="display"> Status: <span class="compulsory">*</span></label> -->
+                                <select name="select" id="Status" class="inputClass" style="padding: 6px 10px;" onchange="filter()" >
+                                    <option value="status">Status</option>
+                                    <option value="open">Open</option>
+                                    <option value="error">Error</option>
+                                    <option value="success">Success</option>
+                                    <option value="inactive">Inactive</option>
+                                </select>
+                                <p class="error" id="statusError"></p><br />
 
-                <button class="f-btn cursor-pointer statusBtnProp">
+                <!-- <button class="f-btn cursor-pointer statusBtnProp">
                     <img src="assests/img/status-icon.svg" alt="status">
                     <span>Status</span>
-                </button>
+                    </button> -->
                 <button class="addBtn-color cursor-pointer "
                     >Add Customer</button>
 
@@ -88,6 +97,9 @@
             <button type="cancel" value="cancel" id="cancel" class="btn-size cancelBtnColor cursor-pointer">
                 Cancel</button>
         </div>
+
+
+        <!-- <input type="text" id="searchInput" onclick="tableSearch()" placeholder="Name"> -->
        
 
     </section>
