@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mockup</title>
+    <link rel="stylesheet" href="assests/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper height d-flex">
+        <!-- aside section starts -->
+        <div class="aside-wrapper overflow-hidden">
+            <aside class="aside-style height d-flex flex-direction-c">
+                <div class="aside-padding-head d-flex  ">
+                    <div class="logo-color">
+                        <i class="fa fa-quora"></i>
+                    </div>
+                    <span class="logo-name-style">Dashboard Kit</span>
+                </div>
+                <div>
+                    <div>
+                        <ul type="none">
+                            <li class="list-item">
+                                <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                                <a href="#" class="aside-style margin-l">
+                                    Overview
+                                </a>
+                            </li>
+                            <li class="list-item"> <i class="fa fa-ticket" aria-hidden="true"></i><a href="#"
+                                    class="aside-style ticket-backgroung-color margin-l">Tickets</a>
+                            </li>
+
+                            <li class="list-item"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> <a href="#"
+                                    class="aside-style margin-l">Ideas</a>
+                            </li>
+                            <li class="list-item"> <i class="fa fa-users" aria-hidden="true"></i><a href="#"
+                                    class="aside-style margin-l">Contacts</a>
+                            </li>
+                            <li class="list-item"><i class="fa fa-address-card" aria-hidden="true"></i> <a href="#"
+                                    class="aside-style margin-l">Agents</a></li>
+                            <li class="list-item"> <i class="fa fa-book" aria-hidden="true"></i><a href="#"
+                                    class="aside-style margin-l">Articles</a></li>
+                        </ul>
+                    </div>
+                    <div class="partitation"></div>
+                    <div c>
+                        <ul type="none">
+                            <li class="list-item"> <i class="fa fa-cog" aria-hidden="true"></i><a href="#"
+                                    class="aside-style margin-l">Settings</a></li>
+                            <li class="list-item"><i class="fa fa-tag" aria-hidden="true"></i> <a href="#"
+                                    class="aside-style ">Subscription</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>
+
+
+        </div>
+        <!-- aside section ends -->
+
+        <!-- header starts -->
+
+
+        <div class=" flex-grow d-flex height overflow-hidden flex-direction-c ">
+
+            <header class="d-flex  j-content-space-between header-padding ">
+                <h2>Tickets</h2>
+
+                <div class="d-flex align-itm ">
+                    <div>
+                        <i class="fa fa-search header-icon me-3" aria-hidden="true"></i>
+                        <i class="fa fa-bell header-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="d-flex align-itm ">
+                        <span class="margin-l-25">Jones ferdinand</span>
+                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="account-img">
+                    </div>
+                </div>
+
+            </header>
+            <section class="setion-padding flex-direction-c d-flex section-header overflow-hidden">
+                <!-- <div class="d-flex j-content-space-between section-header">  -->
+                <div class="d-flex j-content-space-between section-header">
+                    <h2>All Tickets</h2>
+                    <div>
+                        <span class="sort-filter-colo margin-right"> <i class="fa fa-sort-amount-asc margin-right-img  header-icon" aria-hidden="true"></i>Sort</span>
+                        <span class="sort-filter-color  "><i class="fa fa-filter margin-right-img  header-icon " aria-hidden="true"></i>Filter</span>
+                    </div>
+                </div>
+                <div class="overflow-auto">
+                    <table class="width">
+                        <thead class="thead-color ">
+                            <tr>
+                                <th>Ticket details</th>
+                                <th>Customer Name</th>
+                                <th>Date</th>
+                                <th>Priority</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-red badges-size">HIGH</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-low badges-size">LOW</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-normal badges-size">NORMAL</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-red badges-size">HIGH</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-normal badges-size">NORMAL</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-low badges-size">LOW</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-red badges-size">HIGH</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-red badges-size">HIGH</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-red badges-size">HIGH</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <img class="radius" src="assests/img/accountimg-icon.svg" alt="">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Contact Email not Linked</span>
+                                            <span>Updated 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>Tom Cruise</span>
+                                            <span>On 24.05.2019</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-direction-c">
+                                            <span>May 26,2019</span>
+                                            <span>6:30 PM</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <span class="badge-color-red badges-size">HIGH</span>
+                                </td>
+                                <td class="td-border header-icon"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- </div> -->
+                <!-- table starts -->
+
+
+            </section>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
