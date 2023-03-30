@@ -1,0 +1,39 @@
+{
+  "student": [
+    {
+      "name": "sweeeetaaaa",
+      "age": 22,
+      "technology": "frtend",
+      "address": "valsad",
+      "id": 1
+    },
+    {
+      "name": "harsh",
+      "age": 11,
+      "technology": "asAS",
+      "address": "valsad",
+      "id": 2
+    },
+    {
+      "name": "ffsdfsdf",
+      "age": 11,
+      "technology": "asdasd",
+      "address": "valsad",
+      "id": 3
+    },
+    {
+      "name": "ffsdfsdf",
+      "age": 22,
+      "technology": "asdasd",
+      "address": "valsad",
+      "id": 4
+    },
+    {
+      "name": "ffsdfsdf",
+      "age": 22,
+      "technology": "dfsdf",
+      "address": "surat",
+      "id": 5
+    }
+  ]
+}

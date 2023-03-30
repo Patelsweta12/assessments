@@ -1,0 +1,11 @@
+
+.form-style{
+    background-color: rgb(174, 219, 204);
+    width: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 30px;
+    order: 1px solid gray;
+    border-radius: 5px;
+}
