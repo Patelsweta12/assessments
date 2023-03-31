@@ -20,6 +20,7 @@ export class AddStudentComponent implements OnInit {
     this.reactiveForm = new FormGroup({
       name: new FormControl(null, Validators.required),
       age: new FormControl(null, Validators.required),
+      gender:new FormControl(null,Validators.required),
       technology: new FormControl(null, Validators.required),
       address: new FormControl(null, Validators.required),
     });
@@ -34,6 +35,7 @@ export class AddStudentComponent implements OnInit {
         this.reactiveForm.setValue({
           name: this.editStudent.name,
           age: this.editStudent.age,
+          gender:this.editStudent.gender,
           technology: this.editStudent.technology,
           address: this.editStudent.address
         })

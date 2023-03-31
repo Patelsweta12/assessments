@@ -1,39 +1,28 @@
 {
   "student": [
     {
-      "name": "sweeeetaaaa",
+      "name": "swettttt",
+      "age": 444,
+      "gender": "male",
+      "technology": ".net",
+      "address": "fdgdfgdfg",
+      "id": 10
+    },
+    {
+      "name": "swetaaaaaaaaaaaaaaaaaaaa",
       "age": 22,
-      "technology": "frtend",
-      "address": "valsad",
-      "id": 1
-    },
-    {
-      "name": "harsh",
-      "age": 11,
-      "technology": "asAS",
-      "address": "valsad",
-      "id": 2
-    },
-    {
-      "name": "ffsdfsdf",
-      "age": 11,
-      "technology": "asdasd",
-      "address": "valsad",
-      "id": 3
-    },
-    {
-      "name": "ffsdfsdf",
-      "age": 22,
-      "technology": "asdasd",
-      "address": "valsad",
-      "id": 4
-    },
-    {
-      "name": "ffsdfsdf",
-      "age": 22,
-      "technology": "dfsdf",
+      "gender": "female",
+      "technology": "qa",
       "address": "surat",
-      "id": 5
+      "id": 11
+    },
+    {
+      "name": "viufjgusdf",
+      "age": 234,
+      "gender": "female",
+      "technology": "qa",
+      "address": "fdgdfgdfg",
+      "id": 12
     }
   ]
 }
