@@ -26,8 +26,8 @@ export class CustomerService {
     return this.httpClient.get(`http://localhost:3000/customer/${id}`) // get customer by Id from table
   }
 
-  editCustomer(id:any,data:any){
-    return this.httpClient.put(`http://localhost:3000/customer/${id}`,data) // edit customer data
+  editCustomer(data:any){
+    return this.httpClient.put(`http://localhost:3000/customer/${data.id}`,data.formValue) // edit customer data
 }
 
 

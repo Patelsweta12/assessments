@@ -59,11 +59,17 @@ ngOnInit(): void {
   }
 
   postCustomertData(){
+    debugger
     this.postCustomerEvent.emit(this.customerForm.value)
   }
 
 
   updateCustomerData(){
-    this.updateCustomerEvent.emit(this.customerForm.value)
+    debugger
+    const d= {
+      id:this.obtainedEditData.id,
+      formValue:this.customerForm.value
+    }
+    this.updateCustomerEvent.emit(d)
   }
 }

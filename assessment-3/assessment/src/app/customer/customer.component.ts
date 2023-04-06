@@ -55,8 +55,13 @@ export class CustomerComponent implements OnInit {
 }
 
 
-editSelectedCustomer(id:any,data:any){
-  this.customerService.editCustomer(id,data).subscribe(res=>res)
+
+editSelectedCustomer(data:any){
+  debugger
+  this.customerService.editCustomer(data).subscribe(res=>{
+    this.getReturnedCustomerData();
+  }
+    )
 
 }
 

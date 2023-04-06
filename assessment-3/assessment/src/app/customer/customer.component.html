@@ -1,2 +1,2 @@
-<app-customer-form *ngIf="isToggle" (postCustomerEvent)="postCustomer($event)" [obtainedEditData]="obtainedEditData" (toCloseFormEvent)="toCloseF($event)" (updateCustomerEvent)="editSingleCustomer($event)"></app-customer-form>
+<app-customer-form *ngIf="isToggle" (postCustomerEvent)="postCustomer($event)" [obtainedEditData]="obtainedEditData" (toCloseFormEvent)="toCloseF($event)" (updateCustomerEvent)="editSelectedCustomer($event)"></app-customer-form>
 <app-customer-list  [customerListData]="iterableCustomerData" (deleteEvent)="deleteSingleCustomer($event)" (toOpenFormEvent)="toOpenF($event)" (editCustomerEvent)="editSingleCustomer($event)"></app-customer-list>

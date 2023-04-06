@@ -1,15 +1,7 @@
 {
   "customer": [
     {
-      "name": "asas",
-      "description": "ASas",
-      "status": "open",
-      "rate": 2323,
-      "balance": 32323,
-      "id": 4
-    },
-    {
-      "name": "asas",
+      "name": "shweta",
       "description": "ASas",
       "status": "open",
       "rate": 2323,
@@ -33,7 +25,7 @@
       "id": 7
     },
     {
-      "name": "karanaaaaaaaaaaaaaqqqqqqqqqqqqqqqqqqqqq",
+      "name": "karanaaaaaaqqqqqqqqq",
       "description": "ASas423423",
       "status": "inactive",
       "rate": 23233242323423424,
