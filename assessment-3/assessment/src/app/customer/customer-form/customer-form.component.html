@@ -5,7 +5,7 @@
 
         <label for="name">Name</label>
         <input type="text" class="form-control style" id="name" placeholder=" EnterName" formControlName="name">
-        <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['required']">Name is required </div>
+        <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['required']&&customerForm.controls['name']">Name is required </div>
         <!-- <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['minlength']">Name should be at least 3 characters long</div>
         <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['maxlength']">Name should be no more than 25 characters long</div>
         <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['pattern']">Name should only be alphabets</div> -->
@@ -18,7 +18,7 @@
         
 
 
-        
+        <div>
             <label for="status" class="ml-10px">Status</label>
             <select name="status" id="status" formControlName="status" class="style">
                 <option value="open">Open</option>
@@ -27,15 +27,15 @@
                 <option value="success">Success</option>
             </select>
             <div class="error-msg-color" *ngIf="customerForm.controls['status'].errors?.['required']">This field is
-                required</div>
+                required</div></div>
         
 
 
-
+<div>
         <label for="rate">Rate</label>
         <input type="number" class="form-control style" id="rate" placeholder="Enter rate" formControlName="rate">
         <div class="error-msg-color" *ngIf="customerForm.controls['rate'].errors?.['required']">This field is required
-        </div>
+        </div></div>
 
 
         <label for="balance" class="ml-10px">Balance</label>
