@@ -1,0 +1,9 @@
+app-customer-form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 30%;
+    height: 100%;
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,92 @@
+{
+  "customer": [
+    {
+      "name": "asas",
+      "description": "ASas",
+      "status": "open",
+      "rate": 2323,
+      "balance": 32323,
+      "id": 4
+    },
+    {
+      "name": "asas",
+      "description": "ASas",
+      "status": "open",
+      "rate": 2323,
+      "balance": 32323,
+      "id": 5
+    },
+    {
+      "name": "karan",
+      "description": "ASas423423",
+      "status": "inactive",
+      "rate": 23233242323423424,
+      "balance": 323233242342343,
+      "id": 6
+    },
+    {
+      "name": "karanaaaaaaaaaaaaa",
+      "description": "ASas423423",
+      "status": "inactive",
+      "rate": 23233242323423424,
+      "balance": 323233242342343,
+      "id": 7
+    },
+    {
+      "name": "karanaaaaaaaaaaaaaqqqqqqqqqqqqqqqqqqqqq",
+      "description": "ASas423423",
+      "status": "inactive",
+      "rate": 23233242323423424,
+      "balance": 323233242342343,
+      "id": 8
+    },
+    {
+      "name": "karanssssssssssssssssssss",
+      "description": "ASas423423",
+      "status": "inactive",
+      "rate": 23233242323423424,
+      "balance": 323233242342343,
+      "id": 9
+    },
+    {
+      "name": "karanaaaaaaaaaaaaa",
+      "description": "ASas423423",
+      "status": "inactive",
+      "rate": 23233242323423424,
+      "balance": 323233242342343,
+      "id": 10
+    },
+    {
+      "name": "ffsdfsdf",
+      "description": "fsdfsdf",
+      "status": "error",
+      "rate": 33,
+      "balance": 23232,
+      "id": 12
+    },
+    {
+      "name": "asasWWWWW",
+      "description": "ASas",
+      "status": "open",
+      "rate": 2323,
+      "balance": 32323,
+      "id": 13
+    },
+    {
+      "name": "AS",
+      "description": "fsdfsdf",
+      "status": "error",
+      "rate": 323,
+      "balance": 232,
+      "id": 14
+    },
+    {
+      "name": "sweta",
+      "description": "sfddsfsd",
+      "status": "open",
+      "rate": 323,
+      "balance": 23,
+      "id": 15
+    }
+  ]
+}

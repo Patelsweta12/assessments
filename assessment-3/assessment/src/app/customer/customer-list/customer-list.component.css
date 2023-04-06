@@ -1,0 +1,42 @@
+
+
+.delete-icon-color{
+    color: red;
+}
+.edit-icon-color{
+    color:#868FA0
+}
+.mr-9{
+    margin-right: 9px;
+}
+.tableStyle:nth-child(){
+    background-color:  #EBF0FA;;
+}
+.thead{
+    background-color:  #EBF0FA;
+}
+.input-style{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 12px;
+gap: 8px;
+
+width: 164px;
+height: 32px;
+margin-right: 32px;
+margin-top: 10px;
+
+
+/* White */
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(104, 113, 130, 0.16);
+border-radius: 6px;
+}
+.align-btn-input{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+   
+}

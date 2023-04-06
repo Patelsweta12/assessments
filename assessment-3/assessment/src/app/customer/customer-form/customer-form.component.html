@@ -1,0 +1,55 @@
+<form [formGroup]="customerForm" (ngSubmit)="editMode?updateCustomerData():postCustomertData()" class="bg-color">
+    <!-- <form [formGroup]="customerForm"> -->
+    <div class="fp-30px">
+        <div class="form-title">Add Customer</div>
+
+        <label for="name">Name</label>
+        <input type="text" class="form-control style" id="name" placeholder=" EnterName" formControlName="name">
+        <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['required']">Name is required </div>
+        <!-- <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['minlength']">Name should be at least 3 characters long</div>
+        <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['maxlength']">Name should be no more than 25 characters long</div>
+        <div class="error-msg-color" *ngIf="customerForm.controls['name'].errors?.['pattern']">Name should only be alphabets</div> -->
+
+       
+            <label for="description">Description</label>
+            <input type="text" class="form-control style" id="description" placeholder=" Enter description"
+                formControlName="description">
+                <div class="error-msg-color" *ngIf="customerForm.controls['description'].errors?.['required']">Name is required </div>
+        
+
+
+        
+            <label for="status" class="ml-10px">Status</label>
+            <select name="status" id="status" formControlName="status" class="style">
+                <option value="open">Open</option>
+                <option value="error">Error</option>
+                <option value="inactive">Inactive</option>
+                <option value="success">Success</option>
+            </select>
+            <div class="error-msg-color" *ngIf="customerForm.controls['status'].errors?.['required']">This field is
+                required</div>
+        
+
+
+
+        <label for="rate">Rate</label>
+        <input type="number" class="form-control style" id="rate" placeholder="Enter rate" formControlName="rate">
+        <div class="error-msg-color" *ngIf="customerForm.controls['rate'].errors?.['required']">This field is required
+        </div>
+
+
+        <label for="balance" class="ml-10px">Balance</label>
+        <input type="number" class="form-control ml-10px style" id="balance" placeholder=" Enter balance"
+            formControlName="balance">
+        <div class="error-msg-color" *ngIf="customerForm.controls['balance'].errors?.['required']">This field is
+            required</div>
+
+
+        <div class="mt-20">
+
+            <button type="submit" class="btn btn-primary">{{editMode?'update':'save'}}</button>
+            <button type="button" class="btn btn-secondary ml-2 " (click)="toCloseForm()">cancel</button>
+        </div>
+    </div>
+
+</form>

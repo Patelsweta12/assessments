@@ -1,0 +1,41 @@
+<div class="align-btn-input">
+    <input type="text" class="form-control input-style" [(ngModel)]="filter" placeholder="Search here...">
+    <button type="button" class="btn btn-primary mt-2 mb-2 align-btn" (click)="toFormOpen()">Add</button>
+
+    
+</div>
+
+
+<table class="table table-striped ">
+    <thead class="thead">
+        <tr >
+            <th>#</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Rate</th>
+            <th>Balance</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of customerListData |search:filter ">
+            <th>{{data.id}}</th>
+            <td>{{data.name}}</td>
+            <td>{{data.description}}</td>
+            <td>{{data.status}}</td>
+            <td>{{data.rate}}</td>
+            <td>{{data.balance}}</td>
+            <td>
+                <a (click)="deleteCustomer(data.id)"><i class="fa fa-trash delete-icon-color mr-9" aria-hidden="true"></i></a>
+                
+
+
+                <a (click)="getCustomerById(data.id) "><i class="fa fa-pencil edit-icon-color" aria-hidden="true"></i></a>
+                
+              
+            </td>
+        </tr>
+       
+    </tbody>
+</table>
